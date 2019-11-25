@@ -1,6 +1,6 @@
 docker build -t aenache/multi-client:latest -t aenache/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t aenache/multi-server:latest -t aenache/multi-client:$SHA -f ./server/Dockerfile ./server
-docker build -t aenache/multi-worker:latest -t aenache/multi-client:$SHA -f ./worker/Dockerfile ./worker
+docker build -t aenache/multi-server:latest -t aenache/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t aenache/multi-worker:latest -t aenache/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push aenache/multi-client:latest
 docker push aenache/multi-server:latest
